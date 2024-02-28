@@ -2,6 +2,8 @@ import Navbar from './components/Navbar'
 import './App.css'
 import BG from './assets/bg.png'
 import About from './components/About'
+import Gallery from './components/Gallery'
+
 
 function App() {
   
@@ -12,6 +14,7 @@ function App() {
       <Navbar/>
     </div>
     <About/>
+    <Gallery/>
     </>
   )
 }

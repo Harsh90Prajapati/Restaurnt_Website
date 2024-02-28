@@ -3,12 +3,8 @@ import { useState } from "react";
 import Logo from "../assets/logo.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [close, setClose] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
-  };
-  const handleClose = () => {
-    setClose(!close);
   };
 
   return (
@@ -18,7 +14,6 @@ const Navbar = () => {
           <img src={Logo} alt="logo" className="h-14 " />
           <button
             onClick={handleOpen}
-            disabled={close}
             type="button"
             className=" relative inline-flex items-center sm:hidden justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
@@ -69,8 +64,11 @@ const Navbar = () => {
           <a href="#">
             <li>Reservation</li>
           </a>
-          <a href="#">
+          <a href="#about">
             <li>About Us</li>
+          </a>
+          <a href="#gallery">
+            <li>Gallery</li>
           </a>
           <a href="#">
             <li>Contact Us</li>
@@ -93,25 +91,31 @@ const Navbar = () => {
             Home
           </a>
           <a
-            href="#"
+            href="#menu"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Menu
           </a>
           <a
-            href="#"
+            href="#reservation"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Reservation
           </a>
           <a
-            href="#"
+            href="#about"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             About Us
           </a>
           <a
-            href="#"
+            href="#gallery"
+            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+          >
+            Gallery
+          </a>
+          <a
+            href="#contact"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Contact Us
