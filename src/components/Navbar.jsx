@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="max-w-5xl mx-auto">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <img src={Logo} alt="logo" className="h-14 " />
@@ -54,14 +54,14 @@ const Navbar = () => {
             )}
           </button>
         </div>
-        <ul className="sm:flex justify-center items-center gap-10 font-thin hidden ">
+        <ul className="sm:flex justify-center items-center gap-8 font-thin hidden ">
           <a href="#">
             <li>Home</li>
           </a>
-          <a href="#">
+          <a href="#menu">
             <li>Menu</li>
           </a>
-          <a href="#">
+          <a href="#reservation">
             <li>Reservation</li>
           </a>
           <a href="#about">
@@ -70,7 +70,7 @@ const Navbar = () => {
           <a href="#gallery">
             <li>Gallery</li>
           </a>
-          <a href="#">
+          <a href="#contact">
             <li>Contact Us</li>
           </a>
         </ul>
