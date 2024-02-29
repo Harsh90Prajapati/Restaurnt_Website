@@ -3,6 +3,7 @@ import './App.css'
 import About from './components/About'
 import Gallery from './components/Gallery'
 import Menu from './components/Menu'
+import Reservation from './components/Reservation'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <About/>
     <Gallery/>
     <Menu/>
+    <Reservation/>
     </>
   )
 }
