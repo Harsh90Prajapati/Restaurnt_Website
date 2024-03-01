@@ -4,6 +4,8 @@ import About from './components/About'
 import Gallery from './components/Gallery'
 import Menu from './components/Menu'
 import Reservation from './components/Reservation'
+import Testimonial from './components/Testimonial'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -17,10 +19,12 @@ function App() {
       <p className='sm:text-md text-sm font-thin'>The Taste Of Mountain</p>
       <button className='mt-4 py-2 px-4 bg-blue-600 rounded-lg text-sm font-thin shadow-md duration-300 hover:bg-indigo-500'>Book Now</button>
     </div>
-    <About/>
-    <Gallery/>
     <Menu/>
+    <Gallery/>
     <Reservation/>
+    <About/>
+    <Contact/>
+    <Testimonial/>
     </>
   )
 }

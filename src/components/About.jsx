@@ -1,6 +1,6 @@
 const About =()=>{
     return(
-        <div id="about" className="sm:py-20 sm:p-10">
+        <div id="about" className="py-20 mt-20">
             <div className="pb-10" >
                 <h2 className="text-3xl text-left font-semibold">About Us</h2>
                 <p className="text-justify mt-6 text-sm sm:text-left sm:w-96">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet non veritatis a consequatur illum omnis eligendi fugit sed quia tempore nesciunt fuga rerum, perferendis accusamus magnam. Labore cum maiores ipsam!</p>

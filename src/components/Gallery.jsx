@@ -5,7 +5,7 @@ import image3 from "../assets/3.jpg"
 const Gallery =()=>{
     return(
         <div className="py-20" id="gallery">
-            <p className="text-sm text-slate-300">How it Looks </p>
+        <p className="text-sm text-slate-300">How it Looks </p>
         <h1 className="text-5xl font-semibold">Gallery</h1>
         <div className="mt-16 flex sm:flex-row flex-col gap-4 w-full justify-center items-center">
             <div>

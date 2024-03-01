@@ -24,14 +24,12 @@ const Menu =() => {
                 <img src={image3} alt="" className=" w-[400px] sm:h-72 h-[200px] opacity-25 hover:opacity-100 duration-500 hover:scale-110 hover:duration-500 rounded-lg" />
             </div>
         </div>
-        <div className="w-full flex justify-end items-end gap-2 mt-8  text-slate-500 hover:text-slate-300 duration-200 ">
-        <button className="text-sm font-semibold" onClick={()=>{setMenu(!menu)}} >Full Menu  </button>
+        <div className="w-full flex justify-end items-end gap-2 mt-8   ">
+        <button className="text-sm font-semibold text-slate-500 hover:text-slate-300 duration-200" onClick={()=>{setMenu(!menu)}} >Full Menu  </button>
         <HiOutlineArrowNarrowRight size={20} />
         </div>
 
-        {!menu ?<MenuList/>:""
-            
-        }
+        {!menu &&<MenuList/> }
         </div>
         
     )
