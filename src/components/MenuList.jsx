@@ -4,7 +4,7 @@ import { FaCartPlus } from "react-icons/fa";
 
 const MenuList = () => {
   return (
-    <div className="grid sm:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-3 place-content-center place-items-center mt-10">
+    <div className="grid sm:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-3 place-content-center place-items-center mt-10 px-8">
       <div className="w-40 sm:w-64 h-full p-3 border border-[#cce7cc] rounded-md duration-300 ">
         <img src={image3} alt="" className="w-full rounded-md" />
         <div className="text-start pt-3">

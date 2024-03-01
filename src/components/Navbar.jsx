@@ -8,10 +8,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="max-w-5xl mx-auto">
+    <nav className="max-w-5xl mx-auto p-8 ">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
-          <img src={Logo} alt="logo" className="h-14 " />
+          <img src={Logo} alt="logo" className="h-14" />
           <button
             onClick={handleOpen}
             type="button"

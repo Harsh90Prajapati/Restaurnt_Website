@@ -28,10 +28,10 @@ const data =[
 
 function Testimonial() {
   return (
-    <section id="testimonial" className='my-20' >
+    <div id="testimonial" className='my-20 px-8' >
       <h5 className='sm:text-sm text-xs text-slate-300'>Review from Client</h5> 
       <h2 className='sm:text-5xl text-3xl font-semibold pb-10'>Testimonials</h2>    
-      <Swiper className=" sm:w-2/5 "
+      <Swiper className=" sm:w-3/5 "
         modules={[Pagination]}
         spaceBetween={40}
         slidesPerView={1}
@@ -51,7 +51,7 @@ function Testimonial() {
         )
        })}
       </Swiper>    
-    </section>
+    </div>
   )
 }
 

@@ -34,7 +34,7 @@ const Reservation = () => {
     }
 
   return (
-    <div id="reservation" className="bg-slate-800 sm:py-20 py-10 px-10 sm:px-0  rounded-lg shadow-2xl flex flex-col gap-16 justify-center items-center">
+    <div id="reservation" className="bg-slate-800 sm:py-20 mx-8 py-10 px-10 sm:px-0  rounded-lg shadow-2xl flex flex-col gap-16 justify-center items-center">
         <div>
         <p className="text-sm text-slate-300">Book your Table</p>
         <h1 className="sm:text-5xl text-3xl font-semibold">Reservation</h1>

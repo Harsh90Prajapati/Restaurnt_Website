@@ -6,6 +6,7 @@ import Menu from './components/Menu'
 import Reservation from './components/Reservation'
 import Testimonial from './components/Testimonial'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <About/>
     <Contact/>
     <Testimonial/>
+    <Footer/>
     </>
   )
 }

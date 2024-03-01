@@ -9,7 +9,7 @@ const Menu =() => {
 
     const [ menu , setMenu] =useState(true)
     return(
-        <div className="py-20" id="menu">
+        <div className="py-20 px-8" id="menu">
         <p className="text-sm text-slate-300">Our Top Dishes</p>
         <h1 className="text-5xl font-semibold">Menu</h1>
         

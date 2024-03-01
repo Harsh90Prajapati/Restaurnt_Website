@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className=' max-w-4xl mx-auto mt-20 py-10 '>
+    <section id="contact" className=' max-w-4xl mx-auto mt-20 py-10 px-8 '>
       <h5 className="text-sm text-slate-300">Get In Touch</h5>
       <h2 className="sm:text-5xl text-3xl font-semibold">Contact Me</h2>
       <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-3 mt-16 ">
