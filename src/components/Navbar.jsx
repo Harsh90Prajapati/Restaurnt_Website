@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CgProfile } from "react-icons/cg";
 
 import Logo from "../assets/logo.png";
 const Navbar = () => {
@@ -8,10 +9,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="max-w-5xl mx-auto p-8 ">
+    <nav className="max-w-7xl mx-auto p-8 ">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <img src={Logo} alt="logo" className="h-14" />
+          <i className="font-light hidden sm:block">MouMo</i>
           <button
             onClick={handleOpen}
             type="button"
@@ -54,7 +56,7 @@ const Navbar = () => {
             )}
           </button>
         </div>
-        <ul className="sm:flex justify-center items-center gap-8 font-thin hidden ">
+        <ul className="sm:flex justify-between lg:gap-12 md:gap-8 sm:gap-6 items-center hidden ">
           <a href="#">
             <li>Home</li>
           </a>
@@ -74,7 +76,7 @@ const Navbar = () => {
             <li>Contact Us</li>
           </a>
         </ul>
-        <div>login</div>
+        <div className="flex items-center gap-2 cursor-pointer"><CgProfile />Login</div>
       </div>
 
       <div className="w-full sm:hidden ">
