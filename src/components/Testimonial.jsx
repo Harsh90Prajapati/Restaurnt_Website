@@ -1,7 +1,7 @@
 
-import  AT1 from '../assets/avatar1.jpg'
-import  AT2 from '../assets/avatar2.jpg'
-import  AT3 from '../assets/avatar3.jpg'
+import  AT1 from '/assets/avatar1.jpg'
+import  AT2 from '/assets/avatar2.jpg'
+import  AT3 from '/assets/avatar3.jpg'
 import { Pagination} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

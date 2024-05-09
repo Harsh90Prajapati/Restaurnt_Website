@@ -1,74 +1,165 @@
+import Burger from "/assets/burger.png";
+import Pizza from "/assets/pizza.png";
+import Subway from "/assets/sandwich.png";
+import Momo from "/assets/momo.png";
+import Noodle from "/assets/noodle.png";
+import Fries from "/assets/fries.png";
+import Ice_cream from "/assets/ice-cream.png";
+import Rice from "/assets/fried-rice.png";
+import Cake from "/assets/birthday-cake.png";
+import Non_veg from "/assets/chicken-leg.png";
+import All_food from "/assets/fast-food.png";
+import MenuList from "./MenuList";
+import { useState } from "react";
 
-import Burger from "../assets/burger.png"
-import Pizza from "../assets/pizza.png"
-import Subway from "../assets/sandwich.png"
-import Momo from "../assets/momo.png"
-import Noodle from "../assets/noodle.png"
-import Fries from "../assets/fries.png"
-import Ice_cream from "../assets/ice-cream.png"
-import Rice from "../assets/fried-rice.png"
-import Cake from "../assets/birthday-cake.png"
-import Non_veg from "../assets/chicken-leg.png"
+const Menu = () => {
+  const [items] = useState([
+    {
+      id: 1,
+      image:"../assets/momos.jpg",
+      logo: Momo,
+      food_name: "Momo",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "120",
+    },
+    {
+      id: 10,
+      image: "../assets/fries.jpg",
+      logo: Fries,
+      food_name: "Fries",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+    {
+      id: 2,
+      image: "../assets/burger.jpg",
+      logo: Burger,
+      food_name: "Burger",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "95",
+    },
+    {
+      id: 3,
+      image: "../assets/piz.jpg",
+      logo: Pizza,
+      food_name: "Pizza",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "180",
+    },
+    {
+      id: 4,
+      image: "../assets/icecream.jpg",
+      logo: Ice_cream,
+      food_name: "Icecream",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+    {
+      id: 5,
+      image: "../assets/noodles.jpg",
+      logo: Noodle,
+      food_name: "Noodle",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+    {
+      id: 6,
+      image: "../assets/rice.jpg",
+      logo: Rice,
+      food_name: "Fried rice",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+    {
+      id: 7,
+      image: "../assets/cake.jpg",
+      logo: Cake,
+      food_name: "Cake",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+    {
+      id: 8,
+      image: "../assets/food1.jpg",
+      logo: Subway,
+      food_name: "Subway",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+    {
+      id: 9,
+      image: "../assets/food1.jpg",
+      logo: Non_veg,
+      food_name: "Non-veg",
+      description:
+        "Momos are a type of steamed filled dumpling in Tibetan and Nepali cuisine",
+      price: "145",
+    },
+  ]);
 
-import MenuList from "./MenuList"
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+  const [filter, setFilter] = useState("All");
+  const [active, setActive] = useState("");
 
-const Menu =() => {
+  const handleFilterClick = (food_name) => {
+    setFilter(food_name);
+    setActive(food_name);
+  };
 
- 
-    return(
-        <div className="py-20 max-w-7xl mx-auto " id="menu">
-        <p className="text-sm text-slate-300">Our Top Dishes</p>
-        <h1 className="text-5xl font-semibold">Menu</h1>
-        
-        <div className="mt-16 flex sm:p-6 p-3 mx-4 rounded-lg bg-white sm:flex-row   gap-10 justify-between overflow-scroll no-scrollbar items-center">
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Burger} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Burger</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Fries} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Fries</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Pizza} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Pizza</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Momo} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Momo</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Noodle} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Noodle</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Rice} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Rice</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Cake} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Cake</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Ice_cream} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Ice_cream</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Non_veg} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Non_veg</p>
-            </div>
-            <div className="sm:mx-3 opacity-25 hover:opacity-100 duration-300 hover:scale-110 hover:duration-500 cursor-pointer">
-                <img src={Subway} alt="" className="sm:w-20 w-10"/>
-                <p className="font-bold text-black">Subway</p>
-            </div>
-            
-            
-        </div>
-        <MenuList/>
-        </div>
-        
-    )
-}
+  const filterItems =
+    filter === "All"
+      ? items
+      : items.filter((items) => items.food_name === filter);
+
+  return (
+    <div className="py-20 max-w-7xl mx-auto " id="menu">
+      <p className="text-sm text-slate-300">Our Top Dishes</p>
+      <h1 className="text-5xl font-semibold">Menu</h1>
+
+      <div className="mt-16 flex sm:p-6 p-3 mx-4 rounded-lg bg-white gap-10 justify-between overflow-scroll no-scrollbar items-center">
+        <button
+          onClick={() => handleFilterClick("All")}
+          className={`sm:mx-3 ${
+            active === "All"
+              ? "hover:opacity-100 "
+              : "opacity-25 duration-300 hover:scale-110 hover:duration-500"
+          }cursor-pointer`}
+        >
+          <img src={All_food} alt="" className="sm:w-20 w-10 max-w-none" />
+          <p className="font-bold text-black text-xs">All</p>
+        </button>
+
+        {items.map((item) => (
+          <button
+            onClick={() => handleFilterClick(`${item.food_name}`)}
+            className={`sm:mx-3 ${
+              active === `${item.food_name}`
+                ? "hover:opacity-100 "
+                : "opacity-25 duration-300 hover:scale-110 hover:duration-500"
+            }  cursor-pointer`}
+          >
+            <img src={item.logo} alt="" className="sm:w-16 w-10 max-w-none" />
+            <p className="font-bold text-black text-xs mt-1">
+              {item.food_name}
+            </p>
+          </button>
+        ))}
+      </div>
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-2 mx-2 place-items-center mt-10">
+        {filterItems.map((items) => (
+          <MenuList key={items.id} Items={items} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default Menu;

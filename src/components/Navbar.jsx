@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CgProfile } from "react-icons/cg";
 
-import Logo from "../assets/logo.png";
+import Logo from "/assets/logo.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -12,8 +12,8 @@ const Navbar = () => {
     <nav className="max-w-7xl mx-auto p-8 ">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
-          <img src={Logo} alt="logo" className="h-14" />
-          <i className="font-light hidden sm:block">MouMo</i>
+          <img src={Logo} alt="logo" className="h-14 rounded-full bg-yellow-600" />
+          <i className="font-light hidden text-yellow-400 sm:block">MouMo</i>
           <button
             onClick={handleOpen}
             type="button"
