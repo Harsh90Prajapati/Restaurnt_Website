@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="max-w-7xl mx-auto p-8 ">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
-          <img src={Logo} alt="logo" className="h-14 rounded-full bg-yellow-600" />
+          <img src={Logo} alt="logo" className="h-14 rounded-full bg-yellow-600 p-2" />
           <i className="font-light hidden text-yellow-400 sm:block">MouMo</i>
           <button
             onClick={handleOpen}
@@ -66,7 +66,7 @@ const Navbar = () => {
           <a href="#reservation">
             <li>Reservation</li>
           </a>
-          <a href="#about">
+          <a href="#testimonial">
             <li>About Us</li>
           </a>
           <a href="#gallery">

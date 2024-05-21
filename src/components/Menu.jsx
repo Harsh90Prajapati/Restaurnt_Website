@@ -138,13 +138,14 @@ const Menu = () => {
         </button>
 
         {items.map((item) => (
-          <button
+          <button 
             onClick={() => handleFilterClick(`${item.food_name}`)}
             className={`sm:mx-3 ${
               active === `${item.food_name}`
                 ? "hover:opacity-100 "
                 : "opacity-25 duration-300 hover:scale-110 hover:duration-500"
             }  cursor-pointer`}
+            key={item.id}
           >
             <img src={item.logo} alt="" className="sm:w-16 w-10 max-w-none" />
             <p className="font-bold text-black text-xs mt-1">
